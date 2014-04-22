@@ -1,0 +1,375 @@
+/*
+Epic CSS for ogim.ru
+
+by Andrey Starkov
+http://andreystarkov.ru/
+*/
+
+/* font import */
+
+@font-face {font-family: "Liberation Italic"; src: url(/_fonts/lib-italic.ttf);}
+@font-face {font-family: "Liberation Serif"; src: url(/_fonts/lib.ttf);}
+@font-face {font-family: "PT Sans"; src: url(/_fonts/ptsans.ttf);}
+@font-face {font-family: "PT Caption"; src: url(/_fonts/ptcaption.ttf);}
+
+
+body, html {height: 100%; margin: 0; padding: 0;padding-bottom: 15px;}
+body { font-family: "PT Sans", "Trebuchet MS", Tahoma; font-size: 14px; }
+
+
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+b,strong {
+ font-weight: 100;
+ color: black;
+}
+
+b1 {
+ font-size: 16px;
+ color: black;
+}
+b2 {
+ font-size: 16px;
+ color: #005e91;
+}
+b3 {
+ font-size: 13px;
+ color: black;
+ font-weight : bold;
+ 
+}
+
+
+h1,h2,h3,h4 { font-family: "Liberation Serif", Palatino; font-weight: normal; color: #005e91;
+text-align: left; padding-bottom: 15px; padding-top: 15px; }
+
+a {color: #006197;}
+a: hover {color: #155a80;}
+* { margin:0;padding:0;}
+a img {border:none;}
+
+ul.reset,ul.reset li {display:block;list-style:none;padding:0;margin:0;}
+
+ul.reset li {
+position:absolute;
+margin-top: 0px; padding-left: 0px;
+background-image: none; !important;
+background-repeat: '';
+background-position: '';
+}
+
+ul.reset li a {outline:none;}
+
+
+/* top elements */
+
+
+#main-header { width: 100%; margin: 0; background: url(/images/top-bg.png) repeat-x; height: 120px; }
+#main-header-workspace { width: 1000px; position: relative; margin: 0 auto; height: 120px }
+#logo { margin-left: -13px; background: url(/images/logo.png) no-repeat; width: 446px;height:  120px; position: absolute; left: 0px; top: 0px; }
+#contacts { margin-right: -8px; background: url(/images/contacts.png) no-repeat; width: 425px; height: 116px; position: absolute; right: 0px; }
+#eng-link { width: 108px;height:  14px; position: absolute; left: 250px; bottom: 10px; z-index: 100 }
+#nav { position: absolute; top: 122px; width: 100%; height: 40px; }
+#menu { border-bottom: 1px solid gray }
+
+/* major blocks */
+
+#workspace { z-index: 10; border-right: 1px solid silver; min-height: 100%; padding-bottom: 200px; position: relative;  
+background-color: white; margin: 0 auto; width: 1000px; !important}
+#workspace-wrapper { position: relative; width: 100%; background: url(/_images/wrapper-bg.png) repeat-x; overflow:hidden; }
+#main-header-shadow { background: url(/images/shadow.png) repeat-x; position: absolute; z-index: 8; top: 0px; repeat-x; width: 100%; height: 24px; opacity: 0.7 }
+#wrapper { min-height: 100%; padding-bottom: 43px;  overflow:auto; }
+#content { position: relative; border-left: 1px solid silver; min-height: 100%; width: 730px; padding-top: 20px; padding-left: 255px;
+padding-bottom: 30px; padding-right: 15px; height: 100%; color: #383737 }
+
+/* lists */
+
+#content ul { margin-left: 0; padding-left: 0; list-style: none; margin-bottom: 15px; }
+#content li { margin-top: 5px; padding-left: 30px; background-image: url(/_images/list-bullet.png);
+background-repeat: no-repeat; background-position: 0 .5em;}
+#content p { margin-bottom: 10px; text-indent: 10px }
+#left-gradient {position: absolute; left: -35px; margin: 0px; top: 0px; width: 35px; height: 1000px; 
+background: url(/_images/left-gradient.png); background-repeat: repeat-y;}
+#right-gradient {position: absolute; right: -35px; margin: 0px; top: 0px; width: 35px; height: 1000px; 
+background: url(/_images/right-gradient.png);background-repeat: repeat-y; }
+
+/* tables */
+
+
+
+#content table { background-color: white; box-shadow:1px 1px 2px rgba(0,0,0,0.1); -moz-box-shadow:2px 1px 4px rgba(0,0,0,0.3); -webkit-box-shadow:2px 1px 4px rgba(0,0,0,0.3);
+width:100%; border-top:1px solid #a0afbd; border-right:1px solid #a0afbd; margin:1em auto; border-collapse:collapse; }
+#content caption { color: #9ba9b4; letter-spacing:.1em; margin:1em 0 0 0; padding:0; caption-side:top; text-align:center; }
+#content tr.odd td	{ background:#f7fbff }
+#content tr.odd .column1 { background:#f4f9fe; }
+#content .column1 { background:#f9fcfe; }
+#content td { color:#678197; border-bottom:1px solid #a0afbd; border-left:1px solid #a0afbd; padding:.3em 1em; text-align:center; }
+#content th { font-weight:normal; color: #678197; text-align:left; border-bottom: 1px solid #a0afbd; border-left:1px solid #a0afbd; padding:.3em 1em; }
+#content thead th { background:#f4f9fe; text-align:center; vertical-align:center; color:#66a3d3 }
+#content tfoot th { text-align:center; background:#f4f9fe;}
+#content tfoot th strong { margin:.5em .5em .5em 0; color:#66a3d3; }
+#content tfoot th em { color:#f03b58; font-weight: 500; font-size: 1.1em; font-style: normal; }
+#content .odd { background-color:#c0c0c0; }
+#content .row_hover { }
+
+/* breadcrump */
+
+.breadcrump { box-shadow:1px 1px 3px rgba(0,0,0,0.15); -moz-box-shadow:2px 1px 4px rgba(0,0,0,0.3); -webkit-box-shadow:2px 1px 4px rgba(0,0,0,0.3);
+overflow: hidden; padding-left: 55px; padding-right: 10px; position: relative; width: 715px; background: url(/_images/bc-bg.png) repeat-x;
+background-position: bottom; height: 45px; border: 1px solid #cdd2d9; vertical-align: middle; display: table-cell;}
+.breadcrump-icon { cursor: pointer; position: absolute; width: 37px; height: 37px; background: url(/_images/bc-icon.png); left: 5px;top: 3px;}
+.breadcrump a { font-size: 14px; }
+.breadcrump a:hover { text-decoration: none }
+
+/* footer */ 
+
+#footer { position: relative; margin-top: -43px; clear:both; height:43px; border: 1px solid gray; background-image:url(/_images/menu-bg.png); background-repeat: repeat-x; }
+#footer-shadow {background: url(/_images/shadow-footer.png) repeat-x; position: absolute; z-index: 8; 
+bottom: 43px; width: 100%; height: 24px; opacity: 0.7}
+
+/*#footer-workspace { clear:both;width: 1000px; height: 32px;
+padding-top: 15px; margin: 0 auto;color: white;font-size: 12px;font-family: Tahoma;}*/
+
+#footer-workspace { padding-top: 15px; height:20px; width: 1000px; margin: 0 auto;
+padding-left: 450px; color: white; font-size: 12px;font-family: "PT Sans", Tahoma; }
+
+body:before { content:"";height:100%;float:left;width:0;margin-top:-32767px;}
+
+/* left panel & menus */
+
+#left-panel { box-shadow:2px 1px 4px rgba(0,0,0,0.1); -moz-box-shadow:2px 1px 4px rgba(0,0,0,0.1); -webkit-box-shadow:2px 1px 4px rgba(0,0,0,0.1);
+z-index: 5; border-left: 1px solid silver; border-right: 1px dotted silver; width: 235px; position: absolute; left: 0px; top: 0px; height: 100%;
+background: url(/_images/leftmenu-gradient.png) repeat-x; background-position: top top;}
+.left-menu { padding-top: 34px; width: 220px; position: relative; z-index: 50}
+.collapse { opacity: 0.8; cursor: pointer; position: absolute; right: -15px; top: 5px; 
+z-index: 150; background:url(/_images/minimize.png); height: 30px; width: 30px }
+
+/* page menu */
+
+.pagemenu {}
+.pagemenu-head { position: relative; width:252px; height: 33px; margin-top: 0px;  margin-left: -8px }
+.pagemenu-bg { position: absolute; background:url(/_images/pagemenu-head.png); width:252px; height: 33px;}
+.pagemenu-icon { position: absolute; z-index: 10; background:url(/_images/pagemenu-icon.png); width:271px; left: 8px; 
+top: -13px; width: 62px; height: 54px; margin-left: -25px }
+
+.pagemenu-item { width: 200px; padding-left: 5px;}
+.pagemenu-item a { width: 200px; color: #585858; font-size: 14px;}
+.pagemenu-item a:hover { color: #0079bd; text-decoration: none;}
+
+ul.pagemenu-nav { list-style:none; width:235px; font-family:"PT Sans", Helvetica, sans-serif; margin-top:5px}
+ul.pagemenu-nav li { position:relative; border-bottom:1px dotted #c7c7c7; overflow:hidden; padding: 5px;} 
+ul.pagemenu-nav li a { text-shadow: 1px 1px 1px rgba(0,0,0,0.1); position:relative; min-height: 20px; padding-left: 10px; 
+display: block; font-size:14px; color:#3e3e3e; text-decoration:none; z-index:100;}
+	
+/* documents menu */
+
+.documents-table { margin-left: 10px; margin-top: 10px}
+.documents-table td {padding-top: 2px;}
+.documents-head { position: relative; width:252px; height: 33px; margin-top: 0px;  margin-left: -8px }
+.documents-bg { position: absolute; background:url(/_images/documents-head.png); width:252px; height: 33px;}
+.documents-icon { position: absolute; z-index: 10; background:url(/_images/documents-icon.png); width:271px; left: 8px; 
+top: -13px; width: 62px; height: 54px; margin-left: -25px }
+
+.documents-collapse { cursor: pointer; position: absolute; right: 13px; top: 23px; background:url(/_images/collapse.png); height: 17px; width: 17px  }
+.documents-item { width: 200px; padding-left: 5px }
+.documents-item a {  color: #3e3e3e; font-size: 12px; }
+.documents-item a:hover {color: #0079bd; text-decoration: none;}
+.documents-table { border: 0; }
+
+/* topmenu & auth */
+
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+
+/* caf pages */
+
+.news-list-item { padding: 10px; }
+#caf-info { margin-bottom: 10px; position: relative; padding: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); border: 1px dotted silver; 
+background-position: 0 0; width: 96%; min-height: 190px; margin-right: 10px; background:url(/_images/caf-bg.png) repeat-x center bottom; }
+#caf-info p { text-indent: 0px; }
+#caf-boss { position: relative; float: left; height: 192px; width: 125px; margin-right: 10px; }
+#caf-boss-caption { float: left; width: 400px; padding-bottom: 10px; }
+#caf-boss-caption b { height: 18px; font-size: 18px; font-family: "Liberation Serif";}
+#caf-boss-caption i { font-size: 12px; opacity: 0.8; }
+#caf-content {}
+#caf-content * { font-family: "PT Sans", "Trebuchet MS" }
+#caf-content h3 { margin-top: 5px; }
+#caf-content h2 { margin-top: 0px; }
+#caf-content div { }
+#caf-content div.ul { margin-bottom: 0px; padding-bottom: 0px; }
+#caf-content {font-size: 14px; }
+.caf-content-scroll { height: 200px; width: 100%; }
+.caf-content-scroll ul { padding: 10px; }
+#caf-content li { list-style:none; margin-top: 0px; margin-left: 0px; }
+
+#caf-content2 {}
+#caf-content2 * { font-family: "PT Sans", "Trebuchet MS" }
+#caf-content2 h3 { margin-top: 5px; }
+#caf-content2 h2 { margin-top: 0px; }
+#caf-content2 div { }
+#caf-content2 div.ul { margin-bottom: 0px; padding-bottom: 0px; }
+#caf-content2 {font-size: 14px; }
+.caf-content-scroll { height: 200px; width: 100%; }
+.caf-content-scroll ul { padding: 10px; }
+#caf-content2 li { list-style:none; margin-top: 0px; margin-left: 0px; }
+
+
+#caf-phone { padding-right: 45px; background-image:url('/_images/phone.png'); background-position: right;
+background-repeat: no-repeat; font-family: "Liberation Serif"; position: absolute; right: 10px; top: 10px;
+font-size: 18px; text-align: right; }
+#caf-phone span { font-size: 14px; } 
+.personalies-prevew {padding: 0px; height: 260px; overflow: hidden}
+
+/* internal news */
+
+.header-news { position: relative; display: table-cell; width: 100%; vertical-align: center; }
+.news-link { display: table-cell; position: relative; margin-left: 0px; text-align: left; }
+.news-link a { text-decoration: none; font-family: "PT Sans"; font-size: 16px; }
+.news-link a:hover { color: #699ddf; text-decoration: underline }
+.news-date { position: relative; color: #9c9c9d; top: 0px; display: block; width: 15px;
+font-size: 12px; font-style: italic }
+.news-text { position: relative; display: block; color: #3a3a3a; margin-top: 3px;
+font-family: 'PT Sans', 'Trebuchet MS', Verdana, Arial; font-size: 14px;
+text-align: justify; word-spacing: -0.3ex; }
+.socials-block { width:23px; height: auto; position: relative; }
+.socials { position:relative; width:32px; height:32px; cursor:pointer;
+background:url(/_images/social/share.png) center center no-repeat;
+margin-left: -2px; float: left; clear:both; z-index:2; }
+#caf-news { width: 96px; height: auto; }
+.news-list-item { width: 95%; position: relative; display: block; padding-right: 10px;
+padding-bottom: 15px; margin-bottom: 5px; }
+.caf-news-col { position: relative; float: left; width: 50%; height: auto; }
+
+/* personalies */
+
+.person-item { float: left; display: block; width: 300px; margin-bottom: 10px; position: relative; padding: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); border: 1px dotted silver; 
+background-position: 0 0; min-height: 190px; margin-right: 10px; background:url(/_images/caf-bg.png) repeat-x center bottom; }
+.person-item  p { text-indent: 0px; }
+.person-item-img { position: relative; float: left; height: 192px; width: 125px; margin-right: 10px; }
+.person-item-caption { float: left; width: 150px; padding-bottom: 10px; padding-right: 10px;}
+.person-item-caption b { font-size: 12px; font-family: "PT Caption";}
+.person-item-caption i { width: 150px;  padding-right: 10px; display: block; text-indent: 0px; margin-top: 15px; font-size: 12px; }
+.person-item-caption span { text-decoration: bold; font-size: 14px; margin-top: 8px; margin-bottom: 8px; font-family: "PT Caption";}
+.person-item-phone { padding-right: 45px; background-image:url('/_images/phone.png'); background-position: right;
+background-repeat: no-repeat; font-family: "Liberation Serif"; position: absolute; right: 10px; bottom: 10px;
+font-size: 14px; text-align: right; }
+.person-item-phone span { font-size: 12px; } 
+
+.person-preview { display: table-cell; text-align: center; padding-right: 10px; display: none}
+
+.personalies-preview { }
+
+.person-preview-caption {
+font-size: 12px;
+margin-top: 10px;
+font-family: "PT Caption";
+
+}
+
+.person-preview-img {
+cursor: pointer;
+margin: 0 auto; height: 192px; width: 125px; 
+border: 1px solid silver;
+}
+
+.person-info-img {
+float: left;
+margin: 0 auto; height: 192px; width: 125px; 
+border: 1px solid silver;
+}
+
+
+.person-info-content {
+float: left;
+margin: 0 auto; height: 192px; width: 300px; 
+padding-left: 10px;
+}
+
+.person-info-content span {
+font-size: 12px;
+color: #8f8f8f;
+padding-top: -8px;
+}
+.person-info-content span1 {
+font-size: 12px;
+padding-top: -8px;
+}
+
+.person-info-content h3 {
+font-family: "PT Sans";
+margin: 0px;
+padding: 0px;
+}
+
+.person-info-content p {
+padding-top:5px;
+padding-bottom: 5px;
+font-size: 12px;
+}
+.person-info-content b {
+padding-top:5px;
+padding-bottom: 5px;
+font-family: "PT Caption";
+font-size: 12px;
+}
+.person-box {
+   height: 245px;
+
+  width:100%;
+
+margin: 0 auto;
+padding:0px;
+overflow-x:auto;
+overflow-y:auto;
+  }
+  
+  .personalies-list span {
+ 
+  display: none;
+  margin-top: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: #434343;
+}
+
+div.personalies-list {
+
+  /* Set it so we could calculate the offsetLeft */
+  position: relative;
+  height: 245px;
+  width: 100%;
+  /* Add scroll-bars */
+  overflow: auto;
+}
+ul.personalies-list {
+  display: block;
+  height: 110px;
+  /* Max width here, for users without Javascript */
+  width: 10000px;
+  padding: 15px 0 0 15px;
+  /* Remove default margin */
+  margin: 0;
+  background: url('navigation.png');
+  list-style: none;
+}
+.personalies-list li {
+  display: block;
+  float: left;
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+.personalies-list a {
+  display: block;
+  text-decoration: none;
+}
+.personalies-list span {
+  /* We want a caption to display on the next line */
+  display: block;
+  margin-top: 3px;
+  text-align: center;
+  font-size: 13px;
+  color: #434343;
+}
